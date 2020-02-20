@@ -84,6 +84,12 @@
             this.pictureBox26 = new System.Windows.Forms.PictureBox();
             this.pictureBox27 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.checkBox27 = new System.Windows.Forms.CheckBox();
+            this.checkBox28 = new System.Windows.Forms.CheckBox();
+            this.checkBox29 = new System.Windows.Forms.CheckBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -116,10 +122,13 @@
             // 
             // tableLayoutPanel1
             // 
-            this.tableLayoutPanel1.ColumnCount = 3;
+            this.tableLayoutPanel1.ColumnCount = 5;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 17.73399F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 82.26601F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 475F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 91F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 226F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 199F));
+            this.tableLayoutPanel1.Controls.Add(this.label3, 4, 0);
             this.tableLayoutPanel1.Controls.Add(this.Austria, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.checkBox1, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.checkBox2, 0, 3);
@@ -174,6 +183,11 @@
             this.tableLayoutPanel1.Controls.Add(this.pictureBox25, 1, 25);
             this.tableLayoutPanel1.Controls.Add(this.pictureBox26, 1, 26);
             this.tableLayoutPanel1.Controls.Add(this.pictureBox27, 1, 27);
+            this.tableLayoutPanel1.Controls.Add(this.checkBox29, 2, 1);
+            this.tableLayoutPanel1.Controls.Add(this.checkBox27, 3, 1);
+            this.tableLayoutPanel1.Controls.Add(this.checkBox28, 4, 1);
+            this.tableLayoutPanel1.Controls.Add(this.label1, 2, 0);
+            this.tableLayoutPanel1.Controls.Add(this.label2, 3, 0);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(13, 13);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 28;
@@ -454,7 +468,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Eu_Vote_Calc.Properties.Resources.Austria;
-            this.pictureBox1.Location = new System.Drawing.Point(38, 48);
+            this.pictureBox1.Location = new System.Drawing.Point(31, 48);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(28, 22);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -464,7 +478,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::Eu_Vote_Calc.Properties.Resources.Belgium;
-            this.pictureBox2.Location = new System.Drawing.Point(38, 76);
+            this.pictureBox2.Location = new System.Drawing.Point(31, 76);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(28, 19);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -475,7 +489,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = global::Eu_Vote_Calc.Properties.Resources.Bulgaria;
-            this.pictureBox3.Location = new System.Drawing.Point(38, 104);
+            this.pictureBox3.Location = new System.Drawing.Point(31, 104);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(28, 19);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -485,7 +499,7 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = global::Eu_Vote_Calc.Properties.Resources.Croatia;
-            this.pictureBox4.Location = new System.Drawing.Point(38, 132);
+            this.pictureBox4.Location = new System.Drawing.Point(31, 132);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(28, 19);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -495,7 +509,7 @@
             // pictureBox5
             // 
             this.pictureBox5.Image = global::Eu_Vote_Calc.Properties.Resources.Cyprus;
-            this.pictureBox5.Location = new System.Drawing.Point(38, 160);
+            this.pictureBox5.Location = new System.Drawing.Point(31, 160);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(28, 19);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -505,7 +519,7 @@
             // pictureBox6
             // 
             this.pictureBox6.Image = global::Eu_Vote_Calc.Properties.Resources.Czech_Republic;
-            this.pictureBox6.Location = new System.Drawing.Point(38, 188);
+            this.pictureBox6.Location = new System.Drawing.Point(31, 188);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(28, 19);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -515,7 +529,7 @@
             // pictureBox7
             // 
             this.pictureBox7.Image = global::Eu_Vote_Calc.Properties.Resources.Denmark;
-            this.pictureBox7.Location = new System.Drawing.Point(38, 216);
+            this.pictureBox7.Location = new System.Drawing.Point(31, 216);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(28, 19);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -525,7 +539,7 @@
             // pictureBox8
             // 
             this.pictureBox8.Image = global::Eu_Vote_Calc.Properties.Resources.Estonia;
-            this.pictureBox8.Location = new System.Drawing.Point(38, 244);
+            this.pictureBox8.Location = new System.Drawing.Point(31, 244);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(28, 19);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -535,7 +549,7 @@
             // pictureBox9
             // 
             this.pictureBox9.Image = global::Eu_Vote_Calc.Properties.Resources.Finland;
-            this.pictureBox9.Location = new System.Drawing.Point(38, 272);
+            this.pictureBox9.Location = new System.Drawing.Point(31, 272);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(28, 19);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -545,7 +559,7 @@
             // pictureBox10
             // 
             this.pictureBox10.Image = global::Eu_Vote_Calc.Properties.Resources.France;
-            this.pictureBox10.Location = new System.Drawing.Point(38, 300);
+            this.pictureBox10.Location = new System.Drawing.Point(31, 300);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(28, 19);
             this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -555,7 +569,7 @@
             // pictureBox11
             // 
             this.pictureBox11.Image = global::Eu_Vote_Calc.Properties.Resources.Germany;
-            this.pictureBox11.Location = new System.Drawing.Point(38, 328);
+            this.pictureBox11.Location = new System.Drawing.Point(31, 328);
             this.pictureBox11.Name = "pictureBox11";
             this.pictureBox11.Size = new System.Drawing.Size(28, 19);
             this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -565,7 +579,7 @@
             // pictureBox12
             // 
             this.pictureBox12.Image = global::Eu_Vote_Calc.Properties.Resources.Greece;
-            this.pictureBox12.Location = new System.Drawing.Point(38, 356);
+            this.pictureBox12.Location = new System.Drawing.Point(31, 356);
             this.pictureBox12.Name = "pictureBox12";
             this.pictureBox12.Size = new System.Drawing.Size(28, 19);
             this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -575,7 +589,7 @@
             // pictureBox13
             // 
             this.pictureBox13.Image = global::Eu_Vote_Calc.Properties.Resources.Hungary;
-            this.pictureBox13.Location = new System.Drawing.Point(38, 384);
+            this.pictureBox13.Location = new System.Drawing.Point(31, 384);
             this.pictureBox13.Name = "pictureBox13";
             this.pictureBox13.Size = new System.Drawing.Size(28, 19);
             this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -585,7 +599,7 @@
             // pictureBox14
             // 
             this.pictureBox14.Image = global::Eu_Vote_Calc.Properties.Resources.Ireland;
-            this.pictureBox14.Location = new System.Drawing.Point(38, 412);
+            this.pictureBox14.Location = new System.Drawing.Point(31, 412);
             this.pictureBox14.Name = "pictureBox14";
             this.pictureBox14.Size = new System.Drawing.Size(28, 19);
             this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -595,7 +609,7 @@
             // pictureBox15
             // 
             this.pictureBox15.Image = global::Eu_Vote_Calc.Properties.Resources.Italy;
-            this.pictureBox15.Location = new System.Drawing.Point(38, 440);
+            this.pictureBox15.Location = new System.Drawing.Point(31, 440);
             this.pictureBox15.Name = "pictureBox15";
             this.pictureBox15.Size = new System.Drawing.Size(28, 19);
             this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -605,7 +619,7 @@
             // pictureBox16
             // 
             this.pictureBox16.Image = global::Eu_Vote_Calc.Properties.Resources.Latvia;
-            this.pictureBox16.Location = new System.Drawing.Point(38, 468);
+            this.pictureBox16.Location = new System.Drawing.Point(31, 468);
             this.pictureBox16.Name = "pictureBox16";
             this.pictureBox16.Size = new System.Drawing.Size(28, 19);
             this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -615,7 +629,7 @@
             // pictureBox17
             // 
             this.pictureBox17.Image = global::Eu_Vote_Calc.Properties.Resources.Lithuania;
-            this.pictureBox17.Location = new System.Drawing.Point(38, 496);
+            this.pictureBox17.Location = new System.Drawing.Point(31, 496);
             this.pictureBox17.Name = "pictureBox17";
             this.pictureBox17.Size = new System.Drawing.Size(28, 19);
             this.pictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -625,7 +639,7 @@
             // pictureBox18
             // 
             this.pictureBox18.Image = global::Eu_Vote_Calc.Properties.Resources.Luxembourg;
-            this.pictureBox18.Location = new System.Drawing.Point(38, 524);
+            this.pictureBox18.Location = new System.Drawing.Point(31, 524);
             this.pictureBox18.Name = "pictureBox18";
             this.pictureBox18.Size = new System.Drawing.Size(28, 19);
             this.pictureBox18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -635,7 +649,7 @@
             // pictureBox19
             // 
             this.pictureBox19.Image = global::Eu_Vote_Calc.Properties.Resources.Malta;
-            this.pictureBox19.Location = new System.Drawing.Point(38, 552);
+            this.pictureBox19.Location = new System.Drawing.Point(31, 552);
             this.pictureBox19.Name = "pictureBox19";
             this.pictureBox19.Size = new System.Drawing.Size(28, 19);
             this.pictureBox19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -645,7 +659,7 @@
             // pictureBox20
             // 
             this.pictureBox20.Image = global::Eu_Vote_Calc.Properties.Resources.Netherlands;
-            this.pictureBox20.Location = new System.Drawing.Point(38, 580);
+            this.pictureBox20.Location = new System.Drawing.Point(31, 580);
             this.pictureBox20.Name = "pictureBox20";
             this.pictureBox20.Size = new System.Drawing.Size(28, 19);
             this.pictureBox20.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -655,7 +669,7 @@
             // pictureBox21
             // 
             this.pictureBox21.Image = global::Eu_Vote_Calc.Properties.Resources.Poland;
-            this.pictureBox21.Location = new System.Drawing.Point(38, 608);
+            this.pictureBox21.Location = new System.Drawing.Point(31, 608);
             this.pictureBox21.Name = "pictureBox21";
             this.pictureBox21.Size = new System.Drawing.Size(28, 19);
             this.pictureBox21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -665,7 +679,7 @@
             // pictureBox22
             // 
             this.pictureBox22.Image = global::Eu_Vote_Calc.Properties.Resources.Portugal;
-            this.pictureBox22.Location = new System.Drawing.Point(38, 636);
+            this.pictureBox22.Location = new System.Drawing.Point(31, 636);
             this.pictureBox22.Name = "pictureBox22";
             this.pictureBox22.Size = new System.Drawing.Size(28, 19);
             this.pictureBox22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -675,7 +689,7 @@
             // pictureBox23
             // 
             this.pictureBox23.Image = global::Eu_Vote_Calc.Properties.Resources.Romania;
-            this.pictureBox23.Location = new System.Drawing.Point(38, 664);
+            this.pictureBox23.Location = new System.Drawing.Point(31, 664);
             this.pictureBox23.Name = "pictureBox23";
             this.pictureBox23.Size = new System.Drawing.Size(28, 19);
             this.pictureBox23.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -685,7 +699,7 @@
             // pictureBox24
             // 
             this.pictureBox24.Image = global::Eu_Vote_Calc.Properties.Resources.Slovakia;
-            this.pictureBox24.Location = new System.Drawing.Point(38, 692);
+            this.pictureBox24.Location = new System.Drawing.Point(31, 692);
             this.pictureBox24.Name = "pictureBox24";
             this.pictureBox24.Size = new System.Drawing.Size(28, 19);
             this.pictureBox24.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -695,7 +709,7 @@
             // pictureBox25
             // 
             this.pictureBox25.Image = global::Eu_Vote_Calc.Properties.Resources.Slovenia;
-            this.pictureBox25.Location = new System.Drawing.Point(38, 720);
+            this.pictureBox25.Location = new System.Drawing.Point(31, 720);
             this.pictureBox25.Name = "pictureBox25";
             this.pictureBox25.Size = new System.Drawing.Size(28, 19);
             this.pictureBox25.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -705,7 +719,7 @@
             // pictureBox26
             // 
             this.pictureBox26.Image = global::Eu_Vote_Calc.Properties.Resources.Spain;
-            this.pictureBox26.Location = new System.Drawing.Point(38, 748);
+            this.pictureBox26.Location = new System.Drawing.Point(31, 748);
             this.pictureBox26.Name = "pictureBox26";
             this.pictureBox26.Size = new System.Drawing.Size(28, 19);
             this.pictureBox26.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -715,7 +729,7 @@
             // pictureBox27
             // 
             this.pictureBox27.Image = global::Eu_Vote_Calc.Properties.Resources.Sweden;
-            this.pictureBox27.Location = new System.Drawing.Point(38, 776);
+            this.pictureBox27.Location = new System.Drawing.Point(31, 776);
             this.pictureBox27.Name = "pictureBox27";
             this.pictureBox27.Size = new System.Drawing.Size(28, 19);
             this.pictureBox27.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -731,6 +745,60 @@
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // checkBox27
+            // 
+            this.checkBox27.AutoSize = true;
+            this.checkBox27.Location = new System.Drawing.Point(252, 48);
+            this.checkBox27.Name = "checkBox27";
+            this.checkBox27.Size = new System.Drawing.Size(15, 14);
+            this.checkBox27.TabIndex = 2;
+            this.checkBox27.UseVisualStyleBackColor = true;
+            // 
+            // checkBox28
+            // 
+            this.checkBox28.AutoSize = true;
+            this.checkBox28.Location = new System.Drawing.Point(478, 48);
+            this.checkBox28.Name = "checkBox28";
+            this.checkBox28.Size = new System.Drawing.Size(15, 14);
+            this.checkBox28.TabIndex = 54;
+            this.checkBox28.UseVisualStyleBackColor = true;
+            // 
+            // checkBox29
+            // 
+            this.checkBox29.AutoSize = true;
+            this.checkBox29.Location = new System.Drawing.Point(161, 48);
+            this.checkBox29.Name = "checkBox29";
+            this.checkBox29.Size = new System.Drawing.Size(15, 14);
+            this.checkBox29.TabIndex = 55;
+            this.checkBox29.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(161, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(23, 13);
+            this.label1.TabIndex = 56;
+            this.label1.Text = "yes";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(252, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(19, 13);
+            this.label2.TabIndex = 57;
+            this.label2.Text = "no";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(478, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(41, 13);
+            this.label3.TabIndex = 58;
+            this.label3.Text = "abstain";
             // 
             // Form1
             // 
@@ -833,6 +901,12 @@
         private System.Windows.Forms.PictureBox pictureBox26;
         private System.Windows.Forms.PictureBox pictureBox27;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.CheckBox checkBox29;
+        private System.Windows.Forms.CheckBox checkBox27;
+        private System.Windows.Forms.CheckBox checkBox28;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }
 
